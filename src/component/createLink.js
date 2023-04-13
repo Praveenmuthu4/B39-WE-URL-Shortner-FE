@@ -17,7 +17,7 @@ export default function CreateLink() {
     axios
       .post(`${API}/api/url/shorten`, { longUrl: url })
       .then((res) => {
-        res.data
+        console.log(res.data)
       })
       .catch((err) => {
         console.log(err.message);
